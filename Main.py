@@ -97,7 +97,7 @@ fig, ax = plt.subplots(1, 1, figsize=(8, 8))
 ax.set_facecolor('k')
 ax.get_xaxis().set_ticks([])  # enable this to hide x axis ticks
 ax.get_yaxis().set_ticks([])  # enable this to hide y axis ticks
-ln1, = plt.plot([], [], 'o', lw=3, markersize=8)
+ln1, = plt.plot([], [], 'g--', lw=3, markersize=8)
 ax.set_ylim(-4, 4)
 ax.set_xlim(-4, 4)
 ani = animation.FuncAnimation(fig, animate, frames=1000, interval=50)
