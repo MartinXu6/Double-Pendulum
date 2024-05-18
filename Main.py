@@ -80,9 +80,9 @@ def dSdt(S, T, G, M1, M2, L1, L2):
 T = np.linspace(0, 40, 1001)
 G = 9.81
 M1 = 2
-M2 = 1
+M2 = 2
 L1 = 2
-L2 = 1
+L2 = 2
 ans = odeint(dSdt, y0=[1, -3, -1, 5], t=T, args=(G, M1, M2, L1, L2))
 
 the1 = ans.T[0]
